@@ -23,7 +23,7 @@ export const Header = () => {
             className='sm:text-3xl text-base sm:font-bold font-normal text-secondary-100'
             href='/'
           >
-            <Image src='/logo.png' alt='Refer App' width={100} height={100} />
+            <Image src='/logo.png' alt='Refer App' width={125} height={36} />
           </Link>
           <Button
             text='Courses'
