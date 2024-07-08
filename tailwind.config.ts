@@ -18,9 +18,12 @@ const config: Config = {
         secondary: {
           100: '#1A202C',
           200: '#FFFFFF',
-          300: '#D1D5DB',
+          300: '#4B4B4B',
           400: '#9CA3AF',
         },
+      },
+      opacity: {
+        11: '0.11',
       },
     },
   },
