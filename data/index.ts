@@ -12,3 +12,10 @@ export const MenuItems = [
     link: '/about-us',
   },
 ];
+
+export const HeroNavItems = [
+  { name: 'Refer', href: '/refer' },
+  { name: 'Benefits', href: '/benefits' },
+  { name: 'FAQs', href: '/faqs' },
+  { name: 'Support', href: '/support' },
+];
