@@ -47,14 +47,18 @@ export const Header = () => {
             />
           </div>
           <div className='flex gap-4'>
-            <Button
-              text='Login'
-              classNames='text-secondary-100 bg-primary-300/20 '
-            />
-            <Button
-              text='Try for free'
-              classNames='text-secondary-200 bg-primary-100'
-            />
+            <Link href='https://accredian.com/login'>
+              <Button
+                text='Login'
+                classNames='text-secondary-100 bg-primary-300/20 '
+              />
+            </Link>
+            <Link href='https://trial.accredian.com/'>
+              <Button
+                text='Try for free'
+                classNames='text-secondary-200 bg-primary-100'
+              />
+            </Link>
           </div>
         </div>
       </div>
