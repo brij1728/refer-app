@@ -16,13 +16,15 @@ export const Hero = () => {
             <Link href={item.href} key={item.name} passHref>
               <div
                 className={`relative my-1 sm:my-0 cursor-pointer ${
-                  selected === item.name ? 'text-primary-100 font-normal' : ''
+                  selected === item.name
+                    ? 'text-primary-100 font-normal pb-2'
+                    : ''
                 }`}
                 onClick={() => setSelected(item.name)}
               >
                 {item.name}
                 {selected === item.name && (
-                  <span className='absolute mt-1 -bottom-2 left-1/2 transform -translate-x-1/2 text-primary-100 text-lg'>
+                  <span className='absolute -bottom-2 left-1/2 transform -translate-x-1/2 text-primary-100 text-lg'>
                     •
                   </span>
                 )}
