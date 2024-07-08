@@ -1,13 +1,13 @@
 import React from 'react';
 
 interface ButtonProps {
-  text: string;
+  children: React.ReactNode;
   classNames?: string;
   onClick?: () => void;
 }
 
 export const Button: React.FC<ButtonProps> = ({
-  text,
+  children,
   onClick,
   classNames = '',
 }) => {
@@ -16,7 +16,7 @@ export const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       className={`rounded-md px-[18px] py-2 font-poppins text-[15px] font-medium text-primary-100 camleCase ${classNames}`}
     >
-      {text}
+      {children}
     </button>
   );
 };

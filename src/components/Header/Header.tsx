@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { MenuItems } from '../../../data';
+import { SlArrowDown } from 'react-icons/sl';
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,10 +26,9 @@ export const Header = () => {
           >
             <Image src='/logo.png' alt='Refer App' width={125} height={36} />
           </Link>
-          <Button
-            text='Courses'
-            classNames='text-secondary-200 bg-primary-100'
-          />
+          <Button classNames='text-secondary-200 bg-primary-100 flex items-center justify-center '>
+            Resources <SlArrowDown className='ml-2 arrow-icon' />
+          </Button>
         </div>
         <div className='flex items-center'>
           <button
@@ -48,16 +48,14 @@ export const Header = () => {
           </div>
           <div className='flex gap-4'>
             <Link href='https://accredian.com/login'>
-              <Button
-                text='Login'
-                classNames='text-secondary-100 bg-primary-300/20 '
-              />
+              <Button classNames='text-secondary-100 bg-primary-300/20 '>
+                Login
+              </Button>
             </Link>
             <Link href='https://trial.accredian.com/'>
-              <Button
-                text='Try for free'
-                classNames='text-secondary-200 bg-primary-100'
-              />
+              <Button classNames='text-secondary-200 bg-primary-100'>
+                Try for free
+              </Button>
             </Link>
           </div>
         </div>
