@@ -1,12 +1,12 @@
 'use client';
 
+import { Button, NavMenu } from '../ui';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import React, { useState } from 'react';
 
 import Image from 'next/image';
 import Link from 'next/link';
 import { MenuItems } from '../../../data';
-import { NavMenu } from '../ui';
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,12 +18,18 @@ export const Header = () => {
   return (
     <header className='shadow-md py-4'>
       <div className='md:container md:mx-auto flex justify-between items-center px-4'>
-        <Link
-          className='sm:text-3xl text-base sm:font-bold font-normal text-secondary-100'
-          href='/'
-        >
-          <Image src='/logo.png' alt='Refer App' width={100} height={100} />
-        </Link>
+        <div className='flex gap-4 items-center justify-start'>
+          <Link
+            className='sm:text-3xl text-base sm:font-bold font-normal text-secondary-100'
+            href='/'
+          >
+            <Image src='/logo.png' alt='Refer App' width={100} height={100} />
+          </Link>
+          <Button
+            text='Courses'
+            classNames='text-secondary-200 bg-primary-100'
+          />
+        </div>
         <div className='flex items-center'>
           <button
             className='text-white text-2xl md:hidden'
@@ -37,7 +43,17 @@ export const Header = () => {
               navClassName='md:flex'
               ulClassName='flex flex-col md:flex-row'
               liClassName='my-2 md:my-0'
-              linkClassName='text-lg md:text-base text-secondary-100 transition-colors duration-300 md:mx-4'
+              linkClassName='text-lg md:text-base text-secondary-100 transition-colors font-medium duration-300 md:mx-4'
+            />
+          </div>
+          <div className='flex gap-4'>
+            <Button
+              text='Login'
+              classNames='text-secondary-100 bg-primary-300/20 '
+            />
+            <Button
+              text='Try for free'
+              classNames='text-secondary-200 bg-primary-100'
             />
           </div>
         </div>

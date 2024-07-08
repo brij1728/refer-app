@@ -10,14 +10,14 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          100: '#FEE2E2',
+          100: '#1A73E8',
           200: '#FECACA',
-          300: '#FCA5A5',
+          300: '#94A3B8',
           400: '#F87171',
         },
         secondary: {
           100: '#1A202C',
-          200: '#E5E7EB',
+          200: '#FFFFFF',
           300: '#D1D5DB',
           400: '#9CA3AF',
         },
