@@ -33,6 +33,11 @@ export const Hero = () => {
           ))}
         </nav>
       </div>
+      <div>
+        <div>
+          <p>Let’s Learn & Earn</p>
+        </div>
+      </div>
     </div>
   );
 };
